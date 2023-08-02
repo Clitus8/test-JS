@@ -1,0 +1,108 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../bg.jpg");
+    background-size: cover;
+  
+    padding: 0;
+    margin: 0;
+    font-family: 'Fredoka One', cursive;
+}
+
+
+div {
+
+    display: flex;
+    justify-content: center;
+    gap: 10px
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 5px;
+}
+
+body p {
+    display: flex;
+    justify-content: center;
+}
+
+body label {
+    display: flex;
+    justify-content: center;
+    margin: 16px 0px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 20% 1fr 20%;
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    box-sizing: border-box;
+    padding: 10px;
+
+
+
+
+
+}
+
+.container p {
+    height: 40px;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fade2 2s ease forwards;
+    border: 2px solid rgb(255, 171, 36);
+    border-radius: 5px;
+}
+
+.container div {
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(255, 171, 36);
+    animation: fade 2s ease forwards;
+
+}
+
+@keyframes fade {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes fade2 {
+    from {
+        opacity: 0;
+    }
+
+}
+
+.buttons {
+    padding: 30px;
+    background-color: rgba(240, 248, 255, 0.516);
+}
+
+.buttons input {
+    height: 40px;
+    background-color: rgba(240, 248, 255, 0.239);
+    font-family: 'Fredoka One', cursive;
+    border-radius: 5px;
+    transition-duration: 0.3s;
+
+}
+
+.buttons input:hover {
+    cursor: pointer;
+    background-color: rgb(255, 171, 36);
+    transform: scale(1.1, 1.1);
+}
